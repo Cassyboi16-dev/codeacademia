@@ -1,8 +1,10 @@
-import Link from "next/link";
+"use client";
 
+import Link from "next/link";
+import Image from "next/image";
 export default function Home(){
   return (
-    <main className="min-h-dvh bg-[url('/bg.jpg')] bg-no-repeat bg-center bg-cover">
+    <main className="min-h-dvh bg-[url('/bg.jpg')] bg-no-repeat bg-center bg-fixed">
       <section className="min-h-dvh bg-black/60 flex items-center justify-center">
         <div className="lg:w-1/2 text-white flex flex-col gap-10 items-center p-3">
           <h1 className="md:text-6xl text-4xl font-black text-center">Learn, Build, Connect with <span className="text-purple-700 italic">Tech Minds</span>.</h1>
@@ -17,9 +19,26 @@ export default function Home(){
         </div>
       </section>
 
-      <section>
-        <div>
-          
+      <section className="min-h-dvh bg-purple-950">
+        <div className="flex flex-col justify-center items-center p-10">
+          <h1 className="font-black text-white text-6xl max-md:text-4xl">Our Aim</h1>
+          <h4 className="text-slate-500 text-3xl max-md:text-sm">Whilst Shaping Future Leaders in Tech</h4>
+        </div>
+        <div className="grid-cols-3 max-md:grid-cols-2">
+          <div>
+            <Image
+            src="/bg.jpg"
+            width={1000}
+            height={1000}
+            alt="Image of a man coding"
+            className="rounded-2xl w-60 h-60"
+            />
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </section>
     </main>

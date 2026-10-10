@@ -36,7 +36,7 @@ export default function Navbar() {
         }
     ]
     return (
-        <main className="flex items-center justify-between md:px-10 md:py-3 p-3 shadow-md">
+        <main className="flex items-center justify-between md:px-10 md:py-3 p-3 shadow-md sticky top-0 bg-white">
             <Link href={"/"} className="z-50">
                 <Image
                     src={"/logo.png"}

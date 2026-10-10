@@ -33,7 +33,12 @@ export default async function Signin() {
                     <form
                         action={async () => {
                             "use server"
-                            await signIn("google")
+                            try{
+                                await signIn("google")
+
+                            }catch(err){
+                                console.error(err, "There was an issue with signing in")
+                            }
                         }}
                     >      
                         <button type="submit" className="border p-5 text-3xl rounded-md border-gray-400 cursor-pointer"><FcGoogle /></button>

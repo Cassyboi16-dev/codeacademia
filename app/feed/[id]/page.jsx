@@ -47,4 +47,4 @@ const page = async ({params}) => {
   )
 }
 
-export default page
+export default page;

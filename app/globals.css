@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  scrollbar-width: thin;
+  
 }
 
 @theme inline {
@@ -21,4 +23,6 @@
 
 body {
   color: #000;
+  scrollbar-color: rgb(153, 0, 255);
+  scroll-margin: rgb(153, 0, 255) rgb(117, 82, 160);
 }
